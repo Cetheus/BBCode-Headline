@@ -5,8 +5,8 @@
 		<packagename language="de">BBCode Headline</packagename>
 		<packagedescription>This plugin adds a BB-Code for Headlines</packagedescription>
 		<packagedescription language="de">Dieses Plugin fügt einen BB-Code für Überschriften (Headlines) hinzu.</packagedescription>
-		<version>1.0.0</version>
-		<date>2014-02-10</date>
+		<version>1.0.1</version>
+		<date>2014-03-01</date>
 	</packageinformation>
 
 	<authorinformation>
@@ -22,5 +22,9 @@
 		<instruction type="file">files.tar</instruction>
 		<instruction type="bbcode">bbcode.xml</instruction>
 	</instructions>
-
+	
+	<instructions type="update" fromversion="1.0.0">
+		<instruction type="file">files.tar</instruction>
+		<instruction type="bbcode">bbcode.xml</instruction>
+	</instructions>
 </package>

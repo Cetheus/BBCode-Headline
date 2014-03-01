@@ -6,10 +6,17 @@
 			<htmlclose></htmlclose>
 			<allowedchildren>none^color,b,i,u,font,s,sub,sup</allowedchildren>
 			<classname><![CDATA[wcf\system\bbcode\HeadlineBBCode]]></classname>
+			<attributes>
+				<attribute name="0">
+					<html></html>
+					<validationpattern>^[\w]+$</validationpattern>
+					<required>0</required>
+				</attribute>
+			</attributes>
 			<sourcecode>0</sourcecode>
 			<wysiwyg>1</wysiwyg>
 			<wysiwygicon>headlineBBCode.png</wysiwygicon>
-			<buttonlabel>Headline einfügen</buttonlabel>
+			<buttonlabel>Headline einfÃ¼gen</buttonlabel>
 		</bbcode>
 	</import>
 </data>
