@@ -16,7 +16,7 @@
 			<sourcecode>0</sourcecode>
 			<wysiwyg>1</wysiwyg>
 			<wysiwygicon>headlineBBCode.png</wysiwygicon>
-			<buttonlabel>Headline einfÃ¼gen</buttonlabel>
+			<buttonlabel>wcf.bbcode.buttonLabel.headline</buttonlabel>
 		</bbcode>
 	</import>
 </data>
