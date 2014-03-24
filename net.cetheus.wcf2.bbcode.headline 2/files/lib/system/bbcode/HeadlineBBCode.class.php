@@ -19,13 +19,14 @@ class HeadlineBBCode extends AbstractBBCode {
 	public function getParsedTag(array $openingTag, $content, array $closingTag, BBCodeParser $parser) {
 		
 		if ($parser->getOutputType() == 'text/html') {
-			if(isset($openingTag['attributes'][0])){
-				return ('<h4 class="headlineBBCode" id="h-'.$openingTag['attributes'][0].'"><a href="'. WCF::getAnchor('h-'.$openingTag['attributes'][0]) .'">'.$content.'</a></h4>');
-			} else {
-				return ('<h4 class="headlineBBCode">'.$content.'</h4>');
-			}
+
+			WCF::getTPL()->assign(array(
+				'content' => $content,
+				'anchor' => (!empty($openingTag['attributes'][0]) ? 'h-'.$openingTag['attributes'][0] : ''),
+			));
+			return WCF::getTPL()->fetch('headlineBBCodeTag');
 		}
-		if ($parser->getOutputType() == 'text/simplified-html') {
+		else if ($parser->getOutputType() == 'text/simplified-html') {
 			return ("----".$content."----\n");
 		}
 	}
